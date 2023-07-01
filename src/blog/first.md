@@ -1,6 +1,6 @@
 ---
 title: first post
-layout: base
+layout: blog
 tags: post
 ---
 
