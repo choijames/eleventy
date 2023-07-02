@@ -2,6 +2,12 @@ module.exports = function(eleventyConfig){
   eleventyConfig.addPassthroughCopy("src/assets/css");
   eleventyConfig.addPassthroughCopy("src/assets/images");
 
+  eleventyConfig.addCollection("page", function(collections) {
+    return collections.getFilteredByTag("page").sort(function(a, b) {
+      return a.data.order - b.data.order;
+    });
+  });
+
   return {
     dir: {
       input: "src",

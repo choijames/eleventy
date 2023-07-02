@@ -1,7 +1,6 @@
 ---
 title: second post
-layout: blog
-tags: post
+date: 2023-07-02
 ---
 
 # second post
